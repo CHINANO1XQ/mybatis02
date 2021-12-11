@@ -21,5 +21,8 @@ public interface BookMapper {
     int updateByPrimaryKey(Book record);
 
     @Cacheable("bookList")
+    /**
+     * 牛逼
+     */
     List<Book> selAll(Book record);
 }
